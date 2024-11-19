@@ -1,0 +1,12 @@
+{
+  "name": "calculator-activity",
+  "version": "1.0.0",
+  "description": "This activity is organized in a set of git branches. Each branch represents a different stage of the activity.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ashlyn Knox",
+  "license": "ISC"
+}
