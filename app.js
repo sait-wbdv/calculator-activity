@@ -1,7 +1,9 @@
 "use strict";
 
 // process.argv is a way to take command line arguments in node.js you would use a different approach for the browser
-
+const add = require("./add.js");
+const subtract = require("./subtract.js");
+const divide = require("./divide.js");
 const args = process.argv.slice(2);
 
 if (args.length !== 3) {
@@ -13,19 +15,14 @@ if (args.length !== 3) {
 const [num1, operator, num2] = args;
 
 function calculate(num1, operator, num2) {
-  let result;
   if (operator === "+") {
-    result = num1 + num2;
-    return result;
+    return add(num1, num2);
   } else if (operator === "-") {
-    result = num1 - num2;
-    return result;
+    return subtract(num1, num2);
   } else if (operator === "/") {
-    result = num1 / num2;
-    return result;
+    return divide(num1, num2);
   } else if (operator === "*") {
-    result = num1 * num2;
-    return result;
+    return multiply(num1, num2);
   } else {
     console.error("the operator must be either + - / or * ");
     return;
